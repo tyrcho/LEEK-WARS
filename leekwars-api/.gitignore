@@ -1,0 +1,14 @@
+/.settings/
+/target/
+/.classpath
+/.project
+/.idea/
+/out/
+*.iml
+*.tmp
+*.bak
+*.old
+*.sav
+Thumbs.db
+*.releaseBackup
+release.properties

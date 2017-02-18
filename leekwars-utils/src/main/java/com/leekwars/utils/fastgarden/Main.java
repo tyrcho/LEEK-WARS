@@ -40,9 +40,9 @@ public class Main {
 	private static FastGardenParam configuration() {
 		FastGardenParam params = new FastGardenParam();
 		params.setMaxFarmerAttacks(3);
-		params.setWaitTimeToGetResults(20);
-		params.setMaxRetryForFightResult(30);
-		params.setMaxStartFights(10);
+		params.setWaitTimeToGetResults(200);
+		params.setMaxRetryForFightResult(100);
+		params.setMaxStartFights(30);
 		return params;
 	}
 

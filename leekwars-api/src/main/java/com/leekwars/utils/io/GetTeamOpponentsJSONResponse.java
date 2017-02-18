@@ -1,9 +1,10 @@
 package com.leekwars.utils.io;
 
-import com.leekwars.utils.model.FarmerSummary;
 import com.leekwars.utils.model.GardenEnemyTeamComposition;
 import com.leekwars.utils.model.SimpleJSONResponse;
-import lombok.*;
+
+import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 /**
  * Informations du potager suite à un appel à "garden/get-composition-opponents"
@@ -12,6 +13,7 @@ import lombok.*;
  * @since 1.1
  */
 @Data
+@EqualsAndHashCode(callSuper = true)
 public class GetTeamOpponentsJSONResponse extends SimpleJSONResponse {
     private GardenEnemyTeamComposition[] opponents;
 

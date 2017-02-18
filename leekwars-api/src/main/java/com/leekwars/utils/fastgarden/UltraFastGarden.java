@@ -244,7 +244,7 @@ public abstract class UltraFastGarden {
 			for (TeamComposition lCompo : lCompos) {
 				LWUtils.sleep(1);
 				// positionne l'id de l'équipe
-				lCompo.setTeamId(lTeamCompos.getId());
+				lCompo.setId(lTeamCompos.getId());
 				// lance les combats
 				lFights.addAll(fastGardenForTeamCompo(pConnector, lCompo, pVisitor));
 			}

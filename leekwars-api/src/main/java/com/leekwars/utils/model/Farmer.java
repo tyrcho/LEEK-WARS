@@ -1,14 +1,16 @@
 package com.leekwars.utils.model;
 
-import lombok.*;
-
 import java.util.Map;
+
+import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 /**
  * Infos d'un éleveur
  * @author Bezout
  */
 @Data
+@EqualsAndHashCode(callSuper = true)
 public class Farmer extends Entity {
 	private String login;
 	private TeamSummary team;

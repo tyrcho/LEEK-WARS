@@ -1,6 +1,6 @@
 package com.leekwars.utils.model;
 
-import lombok.*;
+import lombok.Data;
 
 /**
  * Objet intermédiaire qui contient les items d'un des classements FUN

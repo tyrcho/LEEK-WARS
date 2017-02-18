@@ -1,5 +1,17 @@
 package com.leekwars.utils.tools;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.security.KeyStore;
+import java.security.MessageDigest;
+import java.security.cert.CertificateException;
+import java.security.cert.X509Certificate;
+
 /*
  * Copyright 2006 Sun Microsystems, Inc.  All Rights Reserved.
  *
@@ -30,12 +42,13 @@ package com.leekwars.utils.tools;
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-import javax.net.ssl.*;
-import java.io.*;
-import java.security.KeyStore;
-import java.security.MessageDigest;
-import java.security.cert.CertificateException;
-import java.security.cert.X509Certificate;
+import javax.net.ssl.SSLContext;
+import javax.net.ssl.SSLException;
+import javax.net.ssl.SSLSocket;
+import javax.net.ssl.SSLSocketFactory;
+import javax.net.ssl.TrustManager;
+import javax.net.ssl.TrustManagerFactory;
+import javax.net.ssl.X509TrustManager;
 
 /**
  * Class used to add the server's certificate to the KeyStore with your trusted certificates.

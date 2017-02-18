@@ -2,7 +2,8 @@ package com.leekwars.utils.wrappers;
 
 import com.leekwars.utils.enums.EntityType;
 import com.leekwars.utils.model.Entity;
-import lombok.*;
+
+import lombok.Data;
 
 /**
  * Wrapper pour infos réduites d'un combat.

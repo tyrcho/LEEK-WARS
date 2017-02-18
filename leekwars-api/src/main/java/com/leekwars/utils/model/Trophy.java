@@ -1,13 +1,16 @@
 package com.leekwars.utils.model;
 
 import com.leekwars.utils.enums.TrophyCategory;
-import lombok.*;
+
+import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 /**
  * Infos d'un trophée
  * @author Bezout
  */
 @Data
+@EqualsAndHashCode(callSuper = true)
 public class Trophy extends Identity {
     private String code;
     private String description;

@@ -1,7 +1,8 @@
 package com.leekwars.utils.model;
 
 import com.leekwars.utils.exceptions.LWException;
-import lombok.*;
+
+import lombok.Data;
 
 /**
  * Représente un couple clef/valeur, par exemple un registre

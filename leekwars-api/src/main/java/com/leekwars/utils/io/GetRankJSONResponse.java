@@ -1,7 +1,9 @@
 package com.leekwars.utils.io;
 
 import com.leekwars.utils.model.SimpleJSONResponse;
-import lombok.*;
+
+import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 /**
  * Informations recues si l'on demande un classement
@@ -9,6 +11,7 @@ import lombok.*;
  * @author Bezout
  */
 @Data
+@EqualsAndHashCode(callSuper = true)
 public class GetRankJSONResponse extends SimpleJSONResponse {
     private long rank;
 

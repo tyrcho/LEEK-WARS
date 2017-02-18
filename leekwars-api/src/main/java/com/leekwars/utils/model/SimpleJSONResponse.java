@@ -1,6 +1,6 @@
 package com.leekwars.utils.model;
 
-import lombok.*;
+import lombok.Data;
 
 /**
  * Réponse JSO minimal

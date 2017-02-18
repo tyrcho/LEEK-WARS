@@ -1,6 +1,6 @@
 package com.leekwars.utils.model;
 
-import lombok.*;
+import lombok.Data;
 
 /**
  * Classe générique pour stocker n'importe quel objet identifiable (nom + id), nom étant optionnel.

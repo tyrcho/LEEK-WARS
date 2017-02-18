@@ -455,6 +455,7 @@ public abstract class UltraFastGarden {
 			//lastFightCount = lPotager.getFarmer_fights();
 			famine = lastFightCount == lFightCount;
 			lastFightCount = lFightCount;
+			lPotager = pConnector.getGarden();
 		}
 
 		if (famine) {

@@ -1,12 +1,14 @@
 package com.leekwars.utils.model;
 
-import lombok.*;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 /**
  * Infos d'une équipe
  * @author Bezout
  */
 @Data
+@EqualsAndHashCode(callSuper = true)
 public class Team extends Entity {
 	private long xp;
 	private long up_xp;

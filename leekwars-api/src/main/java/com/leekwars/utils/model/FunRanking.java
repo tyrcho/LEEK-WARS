@@ -1,6 +1,6 @@
 package com.leekwars.utils.model;
 
-import lombok.*;
+import lombok.Data;
 
 /**
  * Infos d'un des classements FUN

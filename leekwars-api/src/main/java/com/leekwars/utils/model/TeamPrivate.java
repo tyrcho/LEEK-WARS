@@ -1,12 +1,15 @@
 package com.leekwars.utils.model;
 
-import lombok.*;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 /**
  * Infos privées d'une équipe
+ * 
  * @author Bezout
  */
 @Data
+@EqualsAndHashCode(callSuper = true)
 public class TeamPrivate extends Team {
 	// private FarmerSummary?[] candidacies;
 	private long forum;
@@ -14,6 +17,7 @@ public class TeamPrivate extends Team {
 
 	/**
 	 * Accès direct à une compo du tableau compositions
+	 * 
 	 * @param pId
 	 * @return compo
 	 */

@@ -189,7 +189,7 @@ public class HtmlReportFastGardenVisitor implements FastGardenVisitor {
 				(isFR() ? "Combats" : "Fights for"),
 				toString(pEntityType),
 				(pEntityType == EntityType.FARMER ? "farmer" : (pEntityType == EntityType.TEAMP_COMPO ? "team" : "leek")),
-				(pEntity instanceof TeamComposition ? ((TeamComposition)pEntity).getTeamId() : pEntity.getId()),	
+				(pEntity instanceof TeamComposition ? ((TeamComposition)pEntity).getId() : pEntity.getId()),	
 				pEntity.getName()
 				//pEntity.getTalent()
 				));
@@ -276,7 +276,7 @@ public class HtmlReportFastGardenVisitor implements FastGardenVisitor {
 		addBodyLine("\t<tr class=\"" + (diffTalent > 0 ? "win" : (diffTalent == 0 ? "unknown" : "defeat")) + "\">"); // CSS since 1.4
 		addBodyLine(String.format("\t\t<td><b><a href=\"https://leekwars.com/%s/%d\">%s</a></b></td><td>%s</td><td>%d%%</td><td>%.2f</td><td>%d</td><td>%d</td><td>%d</td><td>%d</td><td>%+d (%d &rarr; %d)</td>",
 				(pStat.getEntityType() == EntityType.FARMER ? "farmer" : (pStat.getEntityType() == EntityType.TEAMP_COMPO ? "team" : "leek")),
-				(pStat.getEntity() instanceof TeamComposition ? ((TeamComposition)pStat.getEntity()).getTeamId() : pStat.getEntity().getId()),	
+				(pStat.getEntity() instanceof TeamComposition ? ((TeamComposition)pStat.getEntity()).getId() : pStat.getEntity().getId()),	
 				pStat.getEntity().getName(),
 				pStat.getEntity().getLevel() > 0 ? String.valueOf(pStat.getEntity().getLevel()) : "&empty;",
 				pStat.getVictoriesPercent(),pStat.getRatio(),

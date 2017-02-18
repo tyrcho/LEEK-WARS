@@ -1,14 +1,16 @@
 package com.leekwars.utils.model;
 
-import lombok.*;
-
 import java.util.Map;
+
+import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 /**
  * Informations sur un combat.
  * @author Bezout
  */
 @Data
+@EqualsAndHashCode(callSuper = true)
 public class Fight extends Identity {
 	private long date;
 	private int type;

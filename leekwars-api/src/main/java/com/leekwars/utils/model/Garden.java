@@ -1,9 +1,6 @@
 package com.leekwars.utils.model;
 
-import lombok.*;
-
-import java.util.List;
-import java.util.Map;
+import lombok.Data;
 
 /**
  * Infos du potager [Solo, Eleveur , Equipe]

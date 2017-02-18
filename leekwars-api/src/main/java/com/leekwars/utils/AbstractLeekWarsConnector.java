@@ -1,20 +1,46 @@
 package com.leekwars.utils;
 
-import com.leekwars.utils.enums.RankType;
-import com.leekwars.utils.io.*;
-import com.leekwars.utils.model.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
 import org.apache.log4j.Logger;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonParser;
+import com.leekwars.utils.enums.RankType;
 import com.leekwars.utils.exceptions.LWException;
 import com.leekwars.utils.http.HttpResponseWrapper;
 import com.leekwars.utils.http.HttpUtils;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
+import com.leekwars.utils.io.GetFarmerJSONResponse;
+import com.leekwars.utils.io.GetFarmerOpponentsJSONResponse;
+import com.leekwars.utils.io.GetFarmerTrophiesJSONResponse;
+import com.leekwars.utils.io.GetFightJSONResponse;
+import com.leekwars.utils.io.GetFunRankingsJSONResponse;
+import com.leekwars.utils.io.GetGardenJSONResponse;
+import com.leekwars.utils.io.GetLeekOpponentsJSONResponse;
+import com.leekwars.utils.io.GetRankJSONResponse;
+import com.leekwars.utils.io.GetRegistersJSONResponse;
+import com.leekwars.utils.io.GetTeamJSONResponse;
+import com.leekwars.utils.io.GetTeamOpponentsJSONResponse;
+import com.leekwars.utils.io.GetTeamPrivateJSONResponse;
+import com.leekwars.utils.io.LoginJSONResponse;
+import com.leekwars.utils.io.StartFightJSONResponse;
+import com.leekwars.utils.model.Entity;
+import com.leekwars.utils.model.Farmer;
+import com.leekwars.utils.model.FarmerSummary;
+import com.leekwars.utils.model.Fight;
+import com.leekwars.utils.model.FunRanking;
+import com.leekwars.utils.model.Garden;
+import com.leekwars.utils.model.GardenEnemyTeamComposition;
+import com.leekwars.utils.model.KeyValueCouple;
+import com.leekwars.utils.model.LeekSummary;
+import com.leekwars.utils.model.SimpleJSONResponse;
+import com.leekwars.utils.model.Team;
+import com.leekwars.utils.model.TeamComposition;
+import com.leekwars.utils.model.TeamPrivate;
+import com.leekwars.utils.model.Trophy;
 
 /**
  * Classe mère permettant d'effectuer tous les appels à l'API LW
